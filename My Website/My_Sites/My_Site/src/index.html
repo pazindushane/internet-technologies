@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Site</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+
+    <style>
+        /*=== navigation ==*/
+
+        header {
+            height: 90px;
+            background: white;
+            box-shadow: 1px 2px 7px 4px #bfa0a0d6;
+            position: relative;
+        }
+
+        header > img {
+            padding: 7px;
+            width: 130px;
+            margin: -5px;
+        }
+
+        header > ul {
+            position: absolute;
+            right: 24px;
+            font-size: 20px;
+            top: 0;
+            list-style: none;
+        }
+
+        header > ul > li {
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+            font-family: Quicksand ;
+            font-weight: bold;
+
+            color: #02B1DB;
+        }
+
+        header > ul > li > i {
+            color: black;
+            margin-right: 5px;
+        }
+
+        section.frst{
+            width: 1347px;
+            height: 470px;
+            background: transparent;
+            border: 1px solid #02B1DB;
+        }
+
+        /*=== Main Banner ==*/
+
+        section>aside{
+            top:190px;
+            left: 2px;
+            position: absolute;
+        }
+
+        section>aside>p:nth-child(1) {
+            font-family: Quicksand ;
+            font-weight: bold;
+            font-size: 50px;
+            color: #02B1DB;
+            margin: 20px;
+        }
+
+        section>aside>p:nth-child(2) {
+            font-family: ColorTube;
+            font-size: 65px;
+            color: #313131;
+            margin: 7px;
+        }
+
+        section>aside>p:nth-child(2)>span{
+            font-family: ColorTube;
+
+            font-size: 65px;
+            color: #02B1DB;
+            margin: 7px;
+
+        }
+
+
+        section>aside>p:nth-child(3){
+            font-family:Quicksand ;
+            font-weight: bold;
+            font-size: 50px;
+            color: #02B1DB;
+            margin: 20px;
+
+        }
+
+        section>aside>p:nth-child(3)>span{
+            font-family:Quicksand ;
+            font-weight: bold;
+            font-size: 50px;
+            color: #313131;
+            margin: 0px;
+
+        }
+
+        .bigcircle{
+            width: 230px;
+            height: 230px;
+            border-radius: 100%;
+            position: absolute;
+            top: 207px;
+            right: 90px;
+            border: 10px solid #077EB3;
+        }
+
+        section>article>img{
+            transform: rotate(-180deg);
+            width: 850px;
+            height: 420px;
+            position: absolute;
+            top: 120px;
+            right: 0;
+
+        }
+        .mylogo>img{
+            width: 214px;
+            height: 214px;
+            right: 110px;
+            top: 200px;
+            position: absolute;
+        }
+        .circle1{
+            width: 52px;
+            height: 52px;
+            border-radius: 100%;
+            background: #313131;
+            position: absolute;
+            right: 120px;
+            top: 210px;
+        }
+        .circle2{
+            width: 52px;
+            height: 52px;
+            border-radius: 100%;
+            background: #313131;
+            position: absolute;
+            right: 120px;
+            top: 405px;
+        }
+        .circle3{
+            width: 52px;
+            height: 52px;
+            border-radius: 100%;
+            background: #313131;
+            position: absolute;
+            right: 307px;
+            top: 310px;
+        }
+        .circle1>img{
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 5px;
+
+        }
+        .circle2>img{
+            width: 70px;
+            height: 50px;
+            position: absolute;
+            transform: translate(-32);
+            right: 0;
+            left: -8px;
+            top: 1px;
+            bottom: 0;
+        }
+        .circle3>img{
+            width: 120px;
+            height: 85px;
+            position: absolute;
+
+            bottom: -17px;
+            left: -33px;
+
+        }
+        section.sec>div.cover>img{
+            width: 1186px;
+            height: 677px;
+            transform: rotate(-90deg);
+            position: absolute;
+            right: -254px;
+            top: 820px;
+            opacity: 78%;
+        }
+
+        section.sec>div.abMe>h2{
+            font-family:Quicksand ;
+            font-weight: bold;
+            font-size: 50px;
+            color: #02B1DB;
+            top: 530px;
+            left: 593px;
+            position: absolute;
+        }
+        section.sec>div.abMe>h2>span{
+
+            color: #313131;
+
+        }
+        section.sec>div.myimg>img{
+            width: 492px;
+            height: 538px;
+            top: 660px;
+            left: 50px;
+            position: absolute;
+
+        }
+        section.sec>div.myimg2>img{
+            width: 300px;
+            height: 510px;
+            top: 625px;
+            left: 182px;
+            position: absolute;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img alt="Logo" src="assests/img/logo.png">
+    <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-server"></i>Service</li>
+        <li><i class="fas fa-users"></i>Contacts</li>
+        <li><i class="fas fa-address-card"></i>AboutUs</li>
+    </ul>
+
+</header>
+
+<main>
+    <section class="frst">
+
+        <article>
+            <img alt="Logo" src="assests/img/14622.jpg">
+            <div class="bigcircle">
+
+            </div >
+            <div class="mylogo">
+                <img alt="mlogo" src="assests/img/1dwed.png">
+            </div>
+            <div class="circle1">
+                <img alt="js" src="assests/img/haxe_javascript_logos-removebg-preview%20(1).png">
+            </div>
+            <div class="circle2">
+                <img alt="rc" src="assests/img/1280px-React-icon.svg-removebg-preview.png">
+            </div>
+            <div class="circle3">
+                <img alt="rubic" src="assests/img/27095fe48e3c9bc062f8a3aff685dbcb-removebg-preview.png">
+            </div>
+
+        </article>
+
+        <aside>
+
+            <p>Hello there , I am</p>
+            <p><span>P</span>asindu <span>D</span>ilmin</p>
+            <p><span>D</span>eveloper <span>&</span> D<span>esigner</span></p>
+
+        </aside>
+
+
+        </section>
+    <section class="sec">
+        <div class="cover">
+            <img alt="bg1" src="assests/img/rsz_11—pngtree—white_poster_with_color_geometric_1163081.png">
+        </div>
+        <div class="abMe">
+            <h2>
+                <span>A</span>bout <span>M</span>e
+            </h2>
+        </div>
+
+        <div class="myimg">
+            <img alt="frame" src="assests/img/—Pngtree—paint%20brush%20color%20effect_4085610.png">
+        </div>
+        <div class="myimg2">
+            <img alt="mym" src="assests/img/2M5A9159.png">
+        </div>
+        <div>about me detaias</div>
+    </section>
+    <section>my servise</section>
+    <section>myskils</section>
+    <section>projects</section>
+    <section>assigments</section>
+    <section>education</section>
+    <section>intersts</section>
+    <section>Give me feedback</section>
+
+</main>
+
+<footer>footer</footer>
+
+</body>
+</html>

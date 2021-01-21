@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assests/normalize.css" rel="stylesheet">
+    <style>
+
+        body>main{
+            width: 800px;
+            height: 420px;
+            border: 1px solid red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 60px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        main>section{
+            /*border: 1px solid blue;*/
+            width: 400%;
+            height: 100%;
+            display: flex;
+
+            animation: slider 10s infinite alternate;
+        }
+        section>div{
+        /*border: 1px solid yellow;*/
+        height: 100%;
+        width: 100%;
+    }
+    section>div:nth-child(1){
+        background: url("img/930563.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    section>div:nth-child(2){
+        background: url("img/1078157.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    section>div:nth-child(3){
+        background: url("img/wallpapersden.com_75796-1280x720.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    section>div:nth-child(4){
+        background: url("img/wallpapersden.com_75839-1280x720.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+        @keyframes slider {
+            0%,20%{
+                transform: translate(-0%);
+            }
+            25%,45%{
+                transform: translate(-25%);
+            }
+            50%,70%{
+                transform: translate(-50%);
+            }
+            75%,100%{
+                transform: translate(-75%);
+            }
+            /*100%{
+
+            }*/
+        }
+
+</style>
+</head>
+<body>
+<main>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</main>
+
+</body>
+</html>
